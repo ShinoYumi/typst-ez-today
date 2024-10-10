@@ -1,4 +1,4 @@
-# typst-ez-today
+# ez-today
 
 Simply displays the current date with easy to use customization.
 
