@@ -4,7 +4,7 @@ Simply displays the current date with easy to use customization.
 
 ## Included languages
 
-German, English, French and Italien month can be used out of the box. If you want to use a language that is not included you can easily add it by yourself. This is shown in the Section below under Customization.
+German, English, French and Italian months can be used out of the box. If you want to use a language that is not included, you can easily add it yourself. This is shown in the customization section below.
 
 ## Usage
 
@@ -34,8 +34,8 @@ Prints the current date with given arguments.
 **Arguments:**
 
 - `lang`: [`str`] &mdash; Select one of the included languages (de, en, fr, it).
-- `format`: [`str`] &mdash; Specify the format.
-- `custom_months`: [`array`] of [`str`] &mdash; Use custom naming for each month. This array must have 12 entries. If this is used, the `lang` argument does nothing.
+- `format`: [`str`] &mdash; Specify the output format.
+- `custom_months`: [`array`] of [`str`] &mdash; Use custom names for each month. This array must have 12 entries. If this is used, the `lang` argument does nothing.
 
 ## Customization
 
@@ -53,7 +53,7 @@ You can choose one of the included languages with the `lang` argument:
 #ez-today.today(lang: "it")   // 11. Ottobre 2024
 ```
 
-You can also change the format of the output with the `format` argument. Here you can pass any string, however the following chars gets replaced with the following:
+You can also change the format of the output with the `format` argument. Pass any string you want here, but know that the following characters will be replaced with the following:
 
 - `d` &mdash; The current day as a decimal
 - `m` &mdash; The current month as a decimal (`lang` argument does nothing)
@@ -70,7 +70,7 @@ Here are some examples:
 #ez-today.today(format: "d.m.Y")                // 11.10.2024
 ```
 
-With the `custom_months` argument you can add custom naming for each month. For example this can be a new language or short terms for each month:
+Use the `custom_months` argument to give each month a custom name. You can add a new language or use short terms for each month.
 
 ```typ
 // Defining some custom names

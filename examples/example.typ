@@ -6,7 +6,7 @@
 // Custom format with English months
 #ez-today.today(lang: "en", format: "M-d-Y")
 
-// defining some custom names
+// Defining some custom names
 #let my_months = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
-// get current date with custom names
+// Get current date with custom names
 #ez-today.today(custom_months: my_months, format: "M-y")
