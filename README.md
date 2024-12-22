@@ -4,7 +4,7 @@ Simply displays the current date with easy to use customization.
 
 ## Included languages
 
-German, English, French and Italian months can be used out of the box. If you want to use a language that is not included, you can easily add it yourself. This is shown in the customization section below.
+German, English, French, Italian and Czech months can be used out of the box. If you want to use a language that is not included, you can easily add it yourself. This is shown in the customization section below.
 
 ## Usage
 
@@ -33,7 +33,7 @@ Prints the current date with given arguments.
 
 **Arguments:**
 
-- `lang`: [`str`] &mdash; Select one of the included languages (de, en, fr, it).
+- `lang`: [`str`] &mdash; Select one of the included languages (de, en, fr, it, cs).
 - `format`: [`str`] &mdash; Specify the output format.
 - `custom-months`: [`array`] of [`str`] &mdash; Use custom names for each month. This array must have 12 entries. If this is used, the `lang` argument does nothing.
 
@@ -51,6 +51,7 @@ You can choose one of the included languages with the `lang` argument:
 #ez-today.today(lang: "en")   // 11. October 2024
 #ez-today.today(lang: "fr")   // 11. Octobre 2024
 #ez-today.today(lang: "it")   // 11. Ottobre 2024
+#ez-today.today(lang: "cs")   // 11. Října 2024
 ```
 
 You can also change the format of the output with the `format` argument. Pass any string you want here, but know that the following characters will be replaced with the following:
@@ -78,3 +79,13 @@ Use the `custom-months` argument to give each month a custom name. You can add a
 // Get current date with custom names
 #ez-today.today(custom-months: my-months, format: "M-y")    // Oct-24
 ```
+
+## Changelog
+
+### 0.2.0
+
+- Added support for Czech language by ShinoYumi
+
+### 0.1.0
+
+- First release of ez-today
