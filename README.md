@@ -4,14 +4,14 @@ Simply displays the current date with easy to use customization.
 
 ## Included languages
 
-German, English, French, Italian and Czech months can be used out of the box. If you want to use a language that is not included, you can easily add it yourself. This is shown in the customization section below.
+German, English, French, Italian, Czech and Portuguese months can be used out of the box. If you want to use a language that is not included, you can easily add it yourself. This is shown in the customization section below.
 
 ## Usage
 
 The usage is very simple, because there is only the `today()` function.
 
 ```typ
-#import "@preview/ez-today:0.1.0"
+#import "@preview/ez-today:0.3.0"
 
 // To get the current date use this
 #ez-today.today()
@@ -33,7 +33,7 @@ Prints the current date with given arguments.
 
 **Arguments:**
 
-- `lang`: [`str`] &mdash; Select one of the included languages (de, en, fr, it, cs).
+- `lang`: [`str`] &mdash; Select one of the included languages (de, en, fr, it, cs, pt).
 - `format`: [`str`] &mdash; Specify the output format.
 - `custom-months`: [`array`] of [`str`] &mdash; Use custom names for each month. This array must have 12 entries. If this is used, the `lang` argument does nothing.
 
@@ -52,6 +52,7 @@ You can choose one of the included languages with the `lang` argument:
 #ez-today.today(lang: "fr")   // 11. Octobre 2024
 #ez-today.today(lang: "it")   // 11. Ottobre 2024
 #ez-today.today(lang: "cs")   // 11. Října 2024
+#ez-today.today(lang: "pt")   // 11. Outubro 2024
 ```
 
 You can also change the format of the output with the `format` argument. Pass any string you want here, but know that the following characters will be replaced with the following:
@@ -81,6 +82,10 @@ Use the `custom-months` argument to give each month a custom name. You can add a
 ```
 
 ## Changelog
+
+### 0.3.0
+
+- Added support for Portuguese language by Me-At-The-Age-Of-Git
 
 ### 0.2.0
 
